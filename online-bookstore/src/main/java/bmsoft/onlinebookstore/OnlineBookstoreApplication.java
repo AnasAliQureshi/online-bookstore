@@ -8,7 +8,6 @@ public class OnlineBookstoreApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OnlineBookstoreApplication.class, args);
-		System.out.println("Hellow World");
 	}
 
 }
