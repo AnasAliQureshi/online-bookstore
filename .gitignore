@@ -24,3 +24,5 @@ hs_err_pid*
 
 
 /online-bookstore/target/
+
+/angular-bookstore/node_modules/

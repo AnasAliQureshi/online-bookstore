@@ -12,7 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import lombok.Data;
+import lombok.Data; //this is used to avoid the boiler plate code of an entity like getters setters to string equals and so on.
 
 
 @Entity
