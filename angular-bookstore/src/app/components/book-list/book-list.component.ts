@@ -4,7 +4,8 @@ import { Book } from 'src/app/common/book';
 
 @Component({
   selector: 'app-book-list',
-  templateUrl: './book-list.component.html',
+  //templateUrl: './book-list.component.html',
+  templateUrl: './book-grid.component.html',
   styleUrls: ['./book-list.component.css']
 })
 export class BookListComponent implements OnInit {
@@ -18,7 +19,7 @@ export class BookListComponent implements OnInit {
   }
 
   listbooks(){
-    this._bookService.getBooks().subscribe(
+     this._bookService.getBooks().subscribe(
      data => this.books = data
     )
   }

@@ -17,6 +17,7 @@ export class BookService {
      return this.httpClient.get<GetResponseBooks>(this.baseUrl).pipe(
     map(Response => Response._embedded.books)
      );
+     
   }
 }
 
