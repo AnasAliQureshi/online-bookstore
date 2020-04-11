@@ -21,7 +21,11 @@ public class RepositoryConfig implements RepositoryRestConfigurer {
 		config.exposeIdsFor(entityManager.getMetamodel().getEntities().stream()
 				.map(Type::getJavaType)
 				.toArray(Class[]::new));
-								
+		
+		config.getCorsRegistry()
+				.addMapping("/**")
+				.allowedOrigins("*");
+		
 		//config.exposeIdsFor(Book.class); this is for one table to expose id of table to jason 
            
 	}
